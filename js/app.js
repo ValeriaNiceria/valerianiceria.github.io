@@ -127,7 +127,7 @@ $('.mobile-btn').click(function(){
 
     }
 
-    slider('introducao', 2000); //Chamando a função
+    slider('introducao', 4000); //Chamando a função
 
 })();
 
