@@ -81,43 +81,18 @@ body {
 	clear: both;
 }
 
-.tab-menu {
-	text-align: center;
-	margin: 20px 0 40px 0;
-}
-
-.tab-menu li {
-	display: inline-block;
-}
-
-.tab-menu li a {
-	display: inline-block;
-	color: #222222;
-	border: 4px solid;
-	padding: 10px 0px;
-	width: 200px;
-	margin: 20px;
-	text-decoration: none;
-	font-family: 'Amaranth', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+.sobre {
+	font-family: 'Open Sans', sans-serif;
+	color:rgb(85, 84, 84);
 }
 
 .sobre h1 {
-	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
-	color:rgb(100, 99, 99);
-}
-
-.sobre h3{
-	font-family: 'Open Sans', sans-serif;
-	color:rgb(85, 84, 84);
+	color:rgb(73, 73, 73);
 }
 
 .sobre p{
-	font-family: 'Open Sans', sans-serif;
 	font-size: .95em;
-	color:rgb(85, 84, 84);
 }
 
 .item-info {
