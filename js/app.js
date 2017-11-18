@@ -63,6 +63,14 @@ $('.logo').click(function(e){
     },800);
 });
 
+$('.logo-rodape').click(function(e){
+    e.preventDefault();
+    
+    $('html, body').animate({
+        scrollTop: 0
+    },800);
+});
+
 
 
 //Scroll Suave link Ativo

@@ -5,7 +5,6 @@
 body {
 	margin: 0px;
 	padding-top: 40px;
-	padding-bottom: 120px;
 }
 
 .menu {
@@ -237,13 +236,50 @@ body {
 	opacity: 1;
 }
 
-.construcao h2 {
-	color: black;
+
+footer{
+    position:relative;
+	background: #222222;
+}
+
+.logo-rodape{
 	text-align: center;
-	font-size: 3em;
-	letter-spacing: 2px;
-	margin-top: -2em;
-	margin-bottom: 2em;
-	line-height: 0;
+}
+
+.logo-rodape a{
+	color: white;
+	text-decoration: none;
+	font-family: 'Dancing Script', cursive;
+	letter-spacing: 5px;
+	font-size: 2em;
+}
+
+.social{
+	text-align: center;
+	padding-right: 70px;
+}
+
+.social li{
+	margin-left:30px;
+	display: inline-block;
+}
+
+.social a{
+    height:50px;
+    width:50px;
+    display:block;
+    text-indent:-9999px;
+}
+
+.github{
+    background-image: url(../img/icon/icons8-octocat-50.png);
+}
+
+.bitbucket{
+    background-image: url(../img/icon/icons8-bitbucket-50.png);
+}
+
+.linkedin{
+	background-image: url(../img/icon/icons8-linkedin-50.png);
 }
 
