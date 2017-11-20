@@ -103,7 +103,7 @@ body {
 .img-circle {
 	border-radius: 50%;
 	vertical-align: middle;
-	width: 250px;
+	width: 280px;
 	float:right;
 }
 
@@ -290,9 +290,9 @@ footer{
 }
 
 .social a{
-    height:50px;
-    width:50px;
-    display:block;
+    height:49px;
+    width:49px;
+	display:block;
     text-indent:-9999px;
 }
 
@@ -306,5 +306,9 @@ footer{
 
 .linkedin{
 	background-image: url(../img/icon/icons8-linkedin-50.png);
+}
+
+.mail{
+	background-image: url(../img/icon/icons8-message-48.png);
 }
 
