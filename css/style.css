@@ -62,7 +62,7 @@ body {
 	width: 200px;
 	padding: 10px 10px 14px 20px;
 	text-decoration: none;
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Pacifico', cursive;
 	letter-spacing: 5px;
 	font-size: 2em;
 	float: left;
@@ -274,7 +274,7 @@ footer{
 .logo-rodape a{
 	color: white;
 	text-decoration: none;
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Pacifico', cursive;
 	letter-spacing: 5px;
 	font-size: 2em;
 }
@@ -297,18 +297,18 @@ footer{
 }
 
 .github{
-    background-image: url(../img/icon/icons8-octocat-50.png);
+    background-image: url(../img/icon/github.png);
 }
 
 .bitbucket{
-    background-image: url(../img/icon/icons8-bitbucket-50.png);
+    background-image: url(../img/icon/bitbucket.png);
 }
 
 .linkedin{
-	background-image: url(../img/icon/icons8-linkedin-50.png);
+	background-image: url(../img/icon/linkedin.png);
 }
 
 .mail{
-	background-image: url(../img/icon/icons8-message-48.png);
+	background-image: url(../img/icon/mail.png);
 }
 
