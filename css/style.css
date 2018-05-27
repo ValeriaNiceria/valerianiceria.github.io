@@ -220,8 +220,11 @@ body {
 		margin-right: 30px;			
 	}
 	
-	.github img{
-		width: 30px;	
+	.social a{
+	    height:30px;
+	    width:30px;
+		display:block;
+	    text-indent:-9999px;
 	}
 }
 
