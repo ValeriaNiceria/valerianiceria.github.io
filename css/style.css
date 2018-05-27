@@ -68,6 +68,18 @@ body {
 	float: left;
 }
 
+.log {
+	display: block;
+	color: white;
+	width: 200px;
+	padding: 10px 10px 14px 20px;
+	text-decoration: none;
+	font-family: 'Pacifico', cursive;
+	letter-spacing: 5px;
+	font-size: 2em;
+	float: left;
+}
+
 .container {
 	max-width: 900px;
 	margin: 0 auto;
