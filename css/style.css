@@ -220,7 +220,10 @@ body {
 		margin-right: 30px;			
 	}
 	.logo-rodape{
-		font-size: 2vw;
+		font-size: 2.5vw;
+	}
+	.social img{
+		width: 29px;
 	}
 }
 
