@@ -294,7 +294,6 @@ footer{
 
 .logo-rodape a{
 	color: white;
-	text-decoration: none;
 	font-family: 'Pacifico', cursive;
 	letter-spacing: 5px;
 	font-size: 2em;
@@ -315,22 +314,6 @@ footer{
     width:49px;
 	display:block;
     text-indent:-9999px;
-}
-
-.github{
-    background-image: url(../img/icon/github.png);
-}
-
-.bitbucket{
-    background-image: url(../img/icon/bitbucket.png);
-}
-
-.linkedin{
-	background-image: url(../img/icon/linkedin.png);
-}
-
-.mail{
-	background-image: url(../img/icon/mail.png);
 }
 
 .portifolio {
