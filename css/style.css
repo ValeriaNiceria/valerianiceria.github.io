@@ -292,21 +292,10 @@ footer{
 	letter-spacing: 5px;
 	font-size: 2em;
 }
-.social{
-	text-align: center;
-	padding-right: 70px;
-}
-
-.social li{
-	margin-left:20px;
-	display: inline-block;
-}
-
-.social a{
-    height:49px;
-    width:49px;
-	display:block;
-    text-indent:-9999px;
+.social img{
+	float: center;
+	width: 30px;
+	margin: 0px;
 }
 
 .portifolio {
