@@ -219,6 +219,9 @@ body {
 		margin-left: 30px;	
 		margin-right: 30px;			
 	}
+	.logo-rodape a{
+		font-size: 1em;
+	}
 }
 
 
