@@ -286,6 +286,70 @@ body {
 	opacity: 1;
 }
 
+.footer{
+	background:#292929;
+}
+
+.footer .container{
+	padding:40px 0;
+}
+
+.footer ul{
+	margin:0 auto;
+	text-align:center;
+	list-style-type:none;
+}
+
+.footer ul li{
+	display:inline-block;
+	text-align:center;
+	background:#ffffff;
+	color:#292929;
+	line-height:42px;
+	margin:0 6px;
+	width:42px !important;
+	height:42px !important;
+	
+	-webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.footer ul li:hover{
+	background:#0a9f9f ;
+}
+
+.footer ul li:hover	a{
+	color:#fff;
+}
+
+.footer ul li a{
+	color:#292929;
+	width:42px !important;
+	height:42px !important;
+}
+
+.footer ul li a i{
+	line-height:42px !important;
+}
+
+
+
+.logo-rodape{
+	text-align: center;
+}
+
+.logo-rodape a{
+	color: white;
+	text-decoration: none;
+	font-family: 'Pacifico', cursive;
+	letter-spacing: 5px;
+	font-size: 2em;
+}
+.social img{
+	width: 39px;
+	margin: 5px 4px 2px 1px;
+}
+
 .portfolio {
 	margin-top: 50px;
 	height: 100px;
