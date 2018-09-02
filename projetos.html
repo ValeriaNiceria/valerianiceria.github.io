@@ -5,6 +5,8 @@
 	<title>Valéria Nicéria</title>
 	<link href="https://fonts.googleapis.com/css?family=Amaranth|Dancing+Script|Open+Sans|Pacifico" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 <body>
 
@@ -44,7 +46,7 @@
 	<section class="container">
 		<div class="grid-container" style="margin-bottom: 120px;">
 			<div class="grid-item-portfolio">
-				<a class="portfolio-box" href="">
+				<a onclick="document.getElementById('angularcrud').style.display='block'" class="portfolio-box">
 					<img class="img-responsive" src="./img/portfolio/crud-angular.png" alt="CRUD em Angular, usando banco de dados Firebase">
 					<div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -59,7 +61,7 @@
 				</a>	
 			</div>
 			<div class="grid-item-portfolio">
-				<a class="portfolio-box" href="">
+				<a class="portfolio-box" onclick="document.getElementById('gerenciadorTarefasCodeigniter').style.display='block'" class="portfolio-box">
 					<img class="img-responsive" src="./img/portfolio/gerenciador-tarefas.png" alt="Gerenciador de tarefas CodeIgniter">
 					<div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -74,7 +76,7 @@
 				</a>	
 			</div>
 			<div class="grid-item-portfolio">
-				<a class="portfolio-box" href="">
+				<a class="portfolio-box" onclick="document.getElementById('projetoCodeigniter').style.display='block'">
 					<img class="img-responsive" src="./img/portfolio/tela_principal.png" alt="Cadastro de produtos CodeIgniter">
 					<div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
@@ -92,6 +94,75 @@
 
 	</section>
 
+
+	<!-- Modal CRUD Angular -->
+	<div id="angularcrud" class="w3-modal w3-animate-opacity">
+	    <div class="w3-modal-content w3-card-4">
+	      <header class="w3-container fundo-modal-branco"> 
+	        <span onclick="document.getElementById('angularcrud').style.display='none'" 
+	        class="w3-button botao-modal w3-large w3-display-topright">&times;</span>
+	        <img class="img-modal img-responsive" src="./img/portfolio/crud-angular.png" alt="">
+	      </header>
+	      <div class="w3-container fundo-modal-preto">
+	      	<h5><span style="font-style: italic; padding-right: 30px; ">Descrição:</span> <span>CRUD usando framework angular e banco de dados Firebase.</span></h5>
+	        <p></p>
+	        <h5 style="font-style: italic;">Usado: <span style="padding-left: 30px; font-size: 25px;"><i class="devicon-angularjs-plain" title="Angular"></i> <i class="devicon-bootstrap-plain-wordmark" title="Bootstrap"></i></span> </h5>
+	      </div>
+	      <footer class="w3-container fundo-modal-preto">
+	      	<a target="_blank" href="https://github.com/ValeriaNiceria/crud-angular" class="w3-button w3-black" style="float: right;" title="Código">
+	      		<i class="devicon-github-plain-wordmark"></i> Código
+	      	</a>
+	      </footer>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Modal Gerenciador de tarefas CodeIgniter -->
+	<div id="gerenciadorTarefasCodeigniter" class="w3-modal w3-animate-opacity">
+	    <div class="w3-modal-content w3-card-4">
+	      <header class="w3-container fundo-modal-branco"> 
+	        <span onclick="document.getElementById('gerenciadorTarefasCodeigniter').style.display='none'" 
+	        class="w3-button botao-modal w3-large w3-display-topright">&times;</span>
+	        <img class="img-modal img-responsive" src="./img/portfolio/gerenciador-tarefas.png" alt="">
+	      </header>
+	      <div class="w3-container fundo-modal-preto">
+	      	<h5><span style="font-style: italic; padding-right: 30px; ">Descrição:</span> <span>Gerenciador de tarefas usando framework CodeIgniter.</span></h5>
+	        <p></p>
+	        <h5 style="font-style: italic;">Usado: <span style="padding-left: 30px; font-size: 35px;"><i class="devicon-codeigniter-plain-wordmark" title="CodeIgniter"></i> <i class="devicon-mysql-plain-wordmark" title="MySQL"></i></span> </h5>
+	      </div>
+	      <footer class="w3-container fundo-modal-preto">
+	      	<a target="_blank" href="https://github.com/ValeriaNiceria/gerenciadorTarefas" class="w3-button w3-black" style="float: right;" title="Código">
+	      		<i class="devicon-github-plain-wordmark"></i> Código
+	      	</a>
+	      </footer>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- Modal Projeto CodeIgniter -->
+	<div id="projetoCodeigniter" class="w3-modal w3-animate-opacity">
+	    <div class="w3-modal-content w3-card-4">
+	      <header class="w3-container fundo-modal-branco"> 
+	        <span onclick="document.getElementById('projetoCodeigniter').style.display='none'" 
+	        class="w3-button botao-modal w3-large w3-display-topright">&times;</span>
+	        <img class="img-modal img-responsive" src="./img/portfolio/tela_principal.png" alt="">
+	      </header>
+	      <div class="w3-container fundo-modal-preto">
+	      	<h5><span style="font-style: italic; padding-right: 30px; ">Descrição:</span> <span>Cadastro de produtos usando framework CodeIgniter.</span></h5>
+	        <p></p>
+	        <h5 style="font-style: italic;">Usado: <span style="padding-left: 30px; font-size: 35px;"><i class="devicon-codeigniter-plain-wordmark" title="CodeIgniter"></i> <i class="devicon-mysql-plain-wordmark" title="MySQL"></i></span> </h5>
+	      </div>
+	      <footer class="w3-container fundo-modal-preto">
+	      	<a target="_blank" href="https://github.com/ValeriaNiceria/ProjetoCodeigniter" class="w3-button w3-black" style="float: right;" title="Código">
+	      		<i class="devicon-github-plain-wordmark"></i> Código
+	      	</a>
+	      </footer>
+	    </div>
+	  </div>
+	</div>
+	
 
 
 	<footer>
