@@ -286,29 +286,6 @@ body {
 	opacity: 1;
 }
 
-
-footer{
-	bottom: 0px;
-    position:relative;
-	background: #222222;
-}
-
-.logo-rodape{
-	text-align: center;
-}
-
-.logo-rodape a{
-	color: white;
-	text-decoration: none;
-	font-family: 'Pacifico', cursive;
-	letter-spacing: 5px;
-	font-size: 2em;
-}
-.social img{
-	width: 39px;
-	margin: 5px 4px 2px 1px;
-}
-
 .portfolio {
 	margin-top: 50px;
 	height: 100px;
