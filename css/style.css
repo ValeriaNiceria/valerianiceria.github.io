@@ -92,12 +92,18 @@ body {
 	clear: both;
 }
 
-.sobre {
+.sobre,  .habilidades {
 	font-family: 'Open Sans', sans-serif;
 	color:rgb(85, 84, 84);
 }
 
 .sobre h1 {
+	text-transform: uppercase;
+	color:rgb(73, 73, 73);
+	text-shadow: 0 0 2px black;
+}
+
+.habilidades h1 {
 	text-transform: uppercase;
 	color:rgb(73, 73, 73);
 	text-shadow: 0 0 2px black;
@@ -312,4 +318,19 @@ footer{
 	float: right;
 	width: 30px;
 	margin: 0px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  text-align: left;
+}
+
+.grid-item span {
+  font-size: 20px;
 }
