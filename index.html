@@ -12,10 +12,6 @@
 	<link rel="icon" href="img/icon/favicon.png" type="image/x-icon">
 </head>
 <body>
-
-	<script type="text/javascript">
-		document.documentElement.className += ' js';
-	</script>
 	
 	<header class="menu">
 		<a class="logo" href="/" alt="Valéria Nicéria">
@@ -34,7 +30,7 @@
 				</li>
 
 				<li>
-					<a href="./projetos.html">Projects</a>
+					<a href="#portfolio">Projects</a>
 				</li>
 
 			</ul>			
@@ -42,26 +38,14 @@
 		
 	</header>
 
-	<section class="introducao slide">
-		<div>
-			<img src="img/slide/code-1839406_1920.jpg" alt="Slide site Valéria Nicéria">
-			<h2>Hi, I'm Valéria Nicéria</h2>
-			<h3>Developer</h3>
-		</div>
-
-		<div>
-			<img src="img/slide/technology-785742_1920.jpg" alt="Slide site Valéria Nicéria">
-			<h2>Hi, I'm Valéria Nicéria</h2>
-			<h3>Developer</h3>
-		</div>
-		
+	<section class="introducao">
+		<h2>Hi, I'm Valéria Nicéria!</h2>
 	</section>
 	
 	<section class="container sobre" data-group="sobre" id="sobre">
 		<h1>About</h1>
 		<img class="img-circle" style="width:180px;"  src="img/minha_foto.jpg" alt="Valéria Nicéria">
 		<div class="item-info">
-			<h3>Hi, my name is Valéria.</h3>
 			<p>I'm a developer resides in BH, Brazil. I have a passion for create. I'm currently studying Analysis and systems development at Estácio and doing internship at ABG Consultoria Estatística.</p>
 		</div>
 	</section>
@@ -84,6 +68,8 @@
 				<span><i class="devicon-php-plain colored"></i> PHP</span>
 				<br>
 				<span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+				<br>
+				<span><i class="devicon-python-plain colored"></i> Python</span>
 			</div>
 			<div class="grid-item">
 				<h3 class="title-skill">database:</h3>
@@ -106,6 +92,70 @@
 		</div> 
 	</section>
 
+
+	<section class="container portfolio" data-group="portfolio" id="portfolio">
+		<h1>Projects</h1>
+	</section>
+
+	<section class="container">
+		<div class="grid-container" style="margin-top: -50px;">
+
+			<div class="grid-item-portfolio">
+				<a href="https://github.com/ValeriaNiceria/queimadasFlorestasBrasil" target="_blank" class="portfolio-box">
+					<img class="img-responsive" src="./img/portfolio/queimadas_shiny.png" alt="Dashboard Shiny">
+					<div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Queimadas das florestas brasileiras
+                            </div>
+                            <div class="project-name">
+                                Dashboard Shiny
+                            </div>
+                        </div>
+                    </div>
+				</a>	
+			</div>
+
+			<div class="grid-item-portfolio">
+				<a href="https://github.com/ValeriaNiceria/gerenciadorTarefas" target="_blank" class="portfolio-box">
+					<img class="img-responsive" src="./img/portfolio/gerenciador-tarefas.png" alt="Gerenciador de tarefas CodeIgniter">
+					<div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                            	Gerenciador de tarefas
+                            </div>
+                            <div class="project-name">
+                            	Framework CodeIgniter
+                            </div>
+                        </div>
+                    </div>
+				</a>	
+			</div>
+
+			<br />
+
+			<div class="grid-item-portfolio">
+				<a href="https://github.com/ValeriaNiceria/ProjetoCodeigniter" target="_blank" class="portfolio-box">
+					<img class="img-responsive" src="./img/portfolio/tela_principal.png" alt="Cadastro de produtos CodeIgniter">
+					<div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Cadastro de produtos
+                            </div>
+                            <div class="project-name">
+                                Framework CodeIgniter
+                            </div>
+                        </div>
+                    </div>
+				</a>	
+			</div>
+			
+		</div>
+
+	</section>
+
+	
+
 	<footer class="footer" id="footer">
 	    <div class="container">
 	      <ul>
@@ -116,6 +166,7 @@
 	      </ul>
 	    </div>
 	</footer>
+
 	
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
