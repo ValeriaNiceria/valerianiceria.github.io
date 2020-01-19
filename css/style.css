@@ -7,8 +7,13 @@ body {
 	padding-top: 40px;
 }
 
+h1 {
+	font-family: 'Press Start 2P', sans-serif;
+	font-size: 1.3em;
+}
+
 .menu {
-	background: #222222;
+	background-image: linear-gradient(to right, #630968, #16063f);
 	/*overflow: hidden; */
 	position: fixed;
 	width: 100%;
@@ -58,13 +63,7 @@ body {
 
 .logo {
 	display: block;
-	color: white;
-	width: 200px;
-	padding: 13px 10px 14px 20px;
-	text-decoration: none;
-	font-family: 'Carter One', cursive;
-	letter-spacing: 5px;
-	font-size: 2.15em;
+	padding: 5px 10px 5px 20px;
 	float: left;
 }
 
@@ -92,8 +91,7 @@ body {
 	clear: both;
 }
 
-.sobre,  .habilidades {
-	font-family: 'Open Sans', sans-serif;
+.sobre,  .habilidades, .portfolio {
 	color:rgb(85, 84, 84);
 }
 
@@ -109,8 +107,15 @@ body {
 	text-shadow: 0 0 2px black;
 }
 
+.portfolio h1 {
+	text-transform: uppercase;
+	color:rgb(73, 73, 73);
+	text-shadow: 0 0 2px black;
+}
+
 .title-skill {
-	font-family: 'Amaranth', sans-serif;
+	font-family: 'Press Start 2P', sans-serif;
+	font-size: 0.8em;
 }
 
 .sobre h3 {
@@ -180,12 +185,10 @@ body {
 
 	.menu-nav.mobile-menu {
 		position: fixed;
-		background: #222222;
+		background: #1A0641;
 		padding: 10px;
-
 		top: 60px;
 		right: 0px;
-		
 		opacity:0;
 		visibility: hidden;
 		transform: translate3d(60px, 0px, 0px);	
@@ -208,14 +211,10 @@ body {
 		text-align: center;
 	}
 
-	.introducao{
-		font-size: 2vw;
-	}
-
 	.container {
 		max-width: 80%;
 		margin: 0 auto;
-		padding: 30px 0;
+		padding: 20px 0;
 	}
 
 	.sobre h1{
@@ -246,7 +245,8 @@ body {
 
 
 .introducao {
-	background: black;
+	background-image: linear-gradient(to right, #630968, #16063f);
+	padding-top: 200px;
 }
 
 .introducao h2 {
@@ -297,7 +297,7 @@ body {
 }
 
 .footer{
-	background:#292929;
+	background:#16063f;
 }
 
 .footer .container{
@@ -325,7 +325,7 @@ body {
 }
 
 .footer ul li:hover{
-	background:#0a9f9f ;
+	background:#630968 ;
 }
 
 .footer ul li:hover	a{
@@ -360,18 +360,6 @@ body {
 	margin: 5px 4px 2px 1px;
 }
 
-.portfolio {
-	margin-top: 50px;
-}
-
-.portfolio h1 {
-	font-family: 'Open Sans', sans-serif;
-	color:rgb(85, 84, 84);
-	text-transform: uppercase;
-	text-shadow: 0 0 2px black;
-	text-align: center;
-}
-
 .portfolio img {
 	display: inline-block;
 	float: right;
@@ -383,7 +371,6 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 10px;
 }
 .grid-item {
   padding: 20px;
@@ -415,7 +402,8 @@ body {
 	color:white;
 	opacity:0;
 	display:block;
-	background:rgba(148,146,141,0.9);
+	background: #3D0854;
+	border-radius: 4px;
 	position:absolute;
 	bottom:0;
 	text-align:center;
@@ -456,46 +444,6 @@ body {
 	}
 }
 
-.pensamento {
-	font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-	font-style: italic;
-	text-align: center;
-	max-width: 900px;
-	margin: 0 auto;
-	padding-top: 10px;
-}
-
-.pensamento span {
-	font-weight: bold;
-}
-.img-modal {
-	width: 100%;
-    height: 290px;
-    object-fit: cover;
-    object-position: center;
-}
-
-.fundo-modal-branco {
-	color:#fff!important;
-	background-color:#fff!important
-}
-
-.fundo-modal-preto {
-	color:#fff!important;
-	background-color:#292929!important
-}
-
-.botao-modal {
-	color:#fff!important;
-	background-color:#000!important
-}
-
-.button_wrapper {
-	box-sizing: border-box;
-	display: inline-block;
-	width: 30%;
-	margin:  1%;
-}
 
 button .fill:hover {
 	background-color: transparent;
@@ -512,4 +460,14 @@ button.fill:before {
 	top: 100%;
 	z-index: -1;
 	-webkit-transition: top 0.99s ease-in;
+}
+
+.introducao > h2 {
+    font-size: 2vw;
+    font-family: 'Press Start 2P', sans-serif;
+    padding-bottom: 150px;
+}
+
+.img-responsive {
+	border-radius: 4px;
 }
