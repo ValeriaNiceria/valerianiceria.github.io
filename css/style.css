@@ -320,6 +320,9 @@ h1 {
 
 .footer{
 	background:#16063f;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 }
 
 .footer .container{
