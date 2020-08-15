@@ -2227,3 +2227,12 @@ footer .copy-right {
 reprint__author {
     float: right;
 }
+
+#articleContent img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+    width: 95%;
+}
