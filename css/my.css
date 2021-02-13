@@ -72,3 +72,15 @@
 pre[class*="language-"] {
     background: #1f1f36;
 }
+
+header .side-nav .mobile-head img {
+    display: none;
+}
+
+header .side-nav .mobile-head .logo-desc {
+    display: none;
+}
+
+header .side-nav .mobile-head .logo-name {
+    margin-top: -8px;
+}
