@@ -56,3 +56,19 @@
         transform: translate(0, 0.5px) rotate(1.5deg);
     }
 }
+.fas.fa-archive,
+.fas.fa-bookmark,
+.fas.fa-tags,
+.fas.fa-home,
+.fas.fa-user-circle {
+    font-size: 16px;
+    padding: 3px;
+}
+
+.code-area > pre {
+    background: #1f1f36;
+}
+
+pre[class*="language-"] {
+    background: #1f1f36;
+}

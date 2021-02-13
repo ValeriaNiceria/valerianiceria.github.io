@@ -13,4 +13,5 @@ $(function () {
       $(this).parent().addClass('code-closed');
     }
   });
+  $('.code-area > pre').css('background: #1f1f36;')
 });
