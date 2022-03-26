@@ -375,36 +375,36 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Atualmente vivemos na era do Big Data, ou seja, estamos gerando uma quantidade massiva de dados a todo momento, porém, na maioria das vezes, são dados não estruturados, como notícias, e-mails e textos de forma geral. Mineração de textos ou do inglês <em>Text Mining</em>, tem como objetivo, encontrar termos relevantes e estabelecer relacionamento entre eles de acordo com a sua frequência e assim extrair informações de grandes volumes de textos.</p>
+                <p>Atualmente, vivemos na era do Big Data, ou seja, estamos gerando dados a todo momento, porém, na maioria das vezes, são dados não estruturados, como notícias, e-mails e textos de forma geral. Mineração de textos ou do inglês <em>Text Mining</em>, tem como objetivo, encontrar termos relevantes e estabelecer relacionamento entre eles de acordo com a sua frequência e assim extrair informações de grandes volumes de textos.</p>
 <h2 id="Workflow"><a href="#Workflow" class="headerlink" title="Workflow"></a>Workflow</h2><p><img src="/images/mineracao-texto/ciclo_mineracao.png" alt="Ciclo de mineração"></p>
-<p>Agora que sabemos que é possível obter informações de grandes volumes de textos, vejamos como é o processo de obtenção dessas informações:</p>
+<p>Agora, que sabemos que é possível obter informações, de grandes volumes de textos, vejamos como é o processo de obtenção dessas informações:</p>
 <ul>
-<li><p><strong>Começar com uma pergunta:</strong><br>Primeiramente devemos ter um problema que queremos resolver, ou uma pergunta que desejamos responder, como, por exemplo: <em>Qual o pet mais querido no momento?</em></p>
+<li><p><strong>Começar com uma pergunta:</strong><br>Primeiramente, devemos ter um problema que queremos resolver, ou uma pergunta que desejamos responder, como, por exemplo: <em>Qual o pet mais querido no momento?</em></p>
 </li>
-<li><p><strong>Obter os dados:</strong><br>E como temos algo que queremos responder, precisamos conseguir os dados, sendo assim, utilizarei como fonte de dados, o que as pessoas estão conversando no Twitter.</p>
+<li><p><strong>Obter os dados:</strong><br>Agora, que temos um questionamento, precisamos conseguir os dados que o responda, sendo assim, utilizarei como fonte de dados, o que as pessoas estão conversando no Twitter.</p>
 </li>
-<li><p><strong>Limpar:</strong><br>E com os dados em mãos, iremos realizar outra etapa do processo, que é a limpeza dos dados, removendo caracteres especiais, como acentos, pontuações e tranformaremos todas as palavras em uma só estrutura, como, minúsculo e removeremos todas as <strong>stopwords</strong>, que são palavras irrelevantes para a pergunta que queremos responder.</p>
+<li><p><strong>Limpar:</strong><br>E com os nossos dados em mãos, iremos realizar outra etapa do processo, que é a limpeza dos nossos dados, removendo caracteres especiais, como acentos, pontuações, tranformando todas as palavras em uma só estrutura, como, minúsculo e removeremos todas as <strong>stopwords</strong>, que são palavras irrelevantes para a pergunta que queremos responder.</p>
 </li>
-<li><p><strong>Analisar:</strong><br>E com os dados prontos, iremos realizar uma das partes mais divertidas, que é analisar os dados, onde poderemos aplicar diversas técnicas e verificar se com o dados que possuímos seremos capazes de responder à pergunta que nos motivou a analisar esses dados.</p>
+<li><p><strong>Analisar:</strong><br>Com os nossos dados prontos, iremos realizar uma das partes mais divertidas, que é analisar os nossos dados, onde poderemos aplicar diversas técnicas e verificar se com o dados que possuímos, responderemos à pergunta que nos motivou a analisar esses dados.</p>
 </li>
 <li><p><strong>Visualizar:</strong><br>Nessa etapa, poderemos visualizar o resultado da nossa análise e assim gerar diversas opções de gráficos, como, por exemplo, nuvem de palavras.</p>
 </li>
 <li><p><strong>Extrair conhecimento:</strong><br>E chegamos a última etapa, e se tudo estiver ocorrido bem, durante o processo de análise, teremos transformado os nossos dados em informação e agregando ao nosso entendimento prévio sobre o assunto, como resultado, gerado um conhecimento novo, sobre o fato que estávamos analisando.</p>
 </li>
 </ul>
-<h2 id="Conceitos"><a href="#Conceitos" class="headerlink" title="Conceitos"></a>Conceitos</h2><p>Antes de continuarmos, vamos conhecer alguns conceitos:</p>
+<h2 id="Conceitos"><a href="#Conceitos" class="headerlink" title="Conceitos"></a>Conceitos</h2><p>Antes, de continuarmos, vamos conhecer alguns conceitos:</p>
 <ul>
 <li><strong>Corpus:</strong> Conjuntos de textos.</li>
 <li><strong>Stopwords:</strong> Como comentado anteriormente, são palavras que não adicionam sentido ao texto, como palavras de ligação por exemplo e existem listas de stopwords para vários idiomas na internet.</li>
 </ul>
 <h2 id="Codigo-exemplo"><a href="#Codigo-exemplo" class="headerlink" title="Código exemplo"></a>Código exemplo</h2><p>Chegou o momento mais divertido onde criaremos um projeto básico de text mining, e para isso, utilizaremos a linguagem de programação <a href="https://cran.r-project.org/">R</a> e os seguintes pacotes:</p>
 <ul>
-<li><em>‘rtweet’</em> É um pacote que permitirá que você se conecte ao Twitter, caso você tenha uma conta, onde você poderá realizar buscas, com no máximo 18 mil tweets.</li>
+<li><em>‘rtweet’</em> É um pacote, que permitirá que você se conecte ao Twitter, caso você tenha uma conta, onde você poderá realizar buscas, com no máximo 18 mil tweets.</li>
 <li><em>‘tm’</em> O pacote tm de “Text Mining” é um pacote utilizado para trabalharmos com textos.</li>
-<li><em>‘wordcloud’</em> É um pacote que nos permite visualizar de forma rápida as palavras, utilizando como critério para o tamanho da fonte a sua frequência.</li>
-<li><em>‘tydeverse’</em> É um pacote que possui uma coleção de pacotes inclusos, para ajudar na manipulação dos dados.</li>
+<li><em>‘wordcloud’</em> É um pacote que nos permite visualizar de forma rápida, as palavras, utilizando como critério de tamanho, a frequência.</li>
+<li><em>‘tydeverse’</em> É um pacote, que possui uma coleção de pacotes inclusos, para ajudar na manipulação dos dados.</li>
 </ul>
-<p>Primeiramente vamos instalar os pacotes que serão necessários durante o projeto:</p>
+<p>Primeiramente, vamos instalar os pacotes que serão necessários durante o projeto:</p>
 <pre class=" language-R"><code class="language-R"># Instalando os pacotes
 install.packages("rtweet")
 install.packages("tm")
@@ -458,7 +458,7 @@ pet_corpus <-
   tm_map(removePunctuation) %>% 
   tm_map(removeWords, stopwords("english")) %>% 
   tm_map(removeWords, c("pet", "pets"))</code></pre>
-<p>Após realizar a limpeza dos nossos textos, chegou o momento de visualizar o resultado em uma nuvem de palavras e iremos utilizar a função <em>brewer.pal</em>, para gerar as cores em hexadecimal, para assim, colorirmos a nossa nuvem.</p>
+<p>Após, realizar a limpeza dos nossos textos, chegou o momento de visualizar o resultado em uma nuvem de palavras e iremos utilizar a função <em>brewer.pal</em>, para gerar as cores em hexadecimal, para assim, colorirmos a nossa nuvem.</p>
 <pre class=" language-R"><code class="language-R"># Lista de cores em hexadecimal
 paleta <- brewer.pal(8, "Dark2")
 
@@ -512,7 +512,7 @@ library(devtools)
 # Instalando o pacote 'wordcloud2' via github
 devtools::install_github("lchiffon/wordcloud2", force = TRUE)
 </code></pre>
-<p>E após instalarmos, carregaremos o pacote <em>wordcloud2</em> e passaremos o nosso dataframe com os termos mais frequentes para a função <em>wordcloud2</em> e teremos como resultado o seguinte gráfico.</p>
+<p>E após, instalarmos, carregaremos o pacote <em>wordcloud2</em> e passaremos o nosso dataframe com os termos mais frequentes para a função <em>wordcloud2</em> e teremos como resultado o seguinte gráfico.</p>
 <pre class=" language-R"><code class="language-R"># Carregando o pacote 'wordcloud2'
 library(wordcloud2)
 
@@ -537,7 +537,7 @@ install.packages("syuzhet")
 
 # Carregando o pacote
 library(syuzhet)</code></pre>
-<p>Agora, que instalamos e carregamos o pacote, realizaremos a análise dos sentimentos dos nossos tweets e para tal análise utilizaremos a função <em>get_nrc_sentiment</em>, onde passaremos como parâmetro, os termos da nossa matriz de documentos-termos. E após obtermos as emoções dos nossos termos, faremos o calculo da frequência dos sentimentos que utilizaram a #pet ou #pets.</p>
+<p>Agora, que instalamos e carregamos o pacote, realizaremos a análise dos sentimentos dos nossos tweets e para tal análise utilizaremos a função <em>get_nrc_sentiment</em>, onde passaremos como parâmetro, os termos da nossa matriz de documentos-termos. E após, obtermos as emoções dos nossos termos, faremos o calculo da frequência dos sentimentos que utilizaram a #pet ou #pets.</p>
 <pre class=" language-R"><code class="language-R"># Obtendo as emoções dos nossos termos
 pets_sentimentos <- get_nrc_sentiment(
   pets_doc$dimnames$Terms,
@@ -602,7 +602,7 @@ ggplot(data = df_sentimento,
   ggtitle("Sentimentos das pessoas em relação aos Pets")
 </code></pre>
 <p><img src="/images/mineracao-texto/sentimento.png" alt="Gráfico de sentimentos"></p>
-<p>Então é isso, espero que tenha gostado desse post e até a próxima!</p>
+<p>Então é isso, espero que tenha gostado desse post e até a próxima! Bye!</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -748,7 +748,7 @@ ggplot(data = df_sentimento,
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Atualmente vivemos na era do Big Data, ou seja, estamos gerando uma quantidade massiva de dados a todo momento, porém, n
+                            Atualmente, vivemos na era do Big Data, ou seja, estamos gerando dados a todo momento, porém, na maioria das vezes, são 
                         
                     </div>
                     <div class="publish-info">
@@ -801,7 +801,7 @@ ggplot(data = df_sentimento,
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Atualmente vivemos na era do Big Data, ou seja, estamos gerando uma quantidade massiva de dados a todo momento, porém, n
+                            Atualmente, vivemos na era do Big Data, ou seja, estamos gerando dados a todo momento, porém, na maioria das vezes, são 
                         
                     </div>
                     <div class="publish-info">
@@ -972,65 +972,10 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-
-<!--<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div> -->
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
-    
     <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
-            <span id="year">2021</span>
+            <span id="year">2022</span>
             <a href="/about" target="_blank">Valéria Nicéria</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
@@ -1050,10 +995,6 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 <a href="https://gitlab.com/ValeriaNiceria" class="tooltipped" target="_blank" data-tooltip="GitLab" data-position="top" data-delay="50">
     <i class="fab fa-gitlab"></i>
-</a>
-
-<a href="https://www.instagram.com/valeria.niceria.dev/" class="tooltipped" target="_blank" data-tooltip="Instagram" data-position="top" data-delay="50">
-    <i class="fab fa-instagram"></i>
 </a>
 
 <a href="mailto:valerianiceria@gmail.com" class="tooltipped" target="_blank" data-tooltip="Mail" data-position="top" data-delay="50">
